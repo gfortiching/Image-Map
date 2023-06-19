@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="main-container-areas" class="main-container-areas">
+      <div id="new-states-map" class="new-states-map">
+        <img src="Negros Oriental.png" usemap="#image-map" />
+
+        <map name="new-image-map">
+          <area
+            class="area-basay"
+            target="_blank"
+            alt="Basay"
+            title="Basay"
+            href="https://www.google.com/maps/place/Basay,+Negros+Oriental/@9.4545901,122.602956,12z/data=!3m1!4b1!4m6!3m5!1s0x33acf2f6021ad3b9:0x7f8c20c5ca4507a!8m2!3d9.4386369!4d122.6842498!16zL20vMDVtaGp5?entry=ttu"
+            coords="42,1041,83,947,115,908,149,929,150,961,178,997,182,1037,165,1054,164,1089,147,1086,133,1080,125,1085,111,1082,93,1081,81,1070,55,1056"
+            shape="poly"
+          />
+
+          <area
+            class="area-Bayawan"
+            target="_blank"
+            alt="Bayawan"
+            title="Bayawan"
+            href="https://www.google.com/maps?output=search&q=bayawan&entry=mc&sa=X&ved=2ahUKEwjzy_mJwbj_AhWXVmwGHVZoAxUQ0pQJegQICBAB"
+            coords="116,908,149,930,151,961,177,999,183,1036,163,1055,163,1088,178,1097,190,1094,233,1107,251,1122,258,1126,269,1115,275,1112,271,1120,264,1131,270,1132,391,1021,321,924,322,900,322,862,314,853,314,844,290,800,291,788,300,784,306,777,306,761,269,761,257,748"
+            shape="poly"
+          />
+        </map>
+
+        <div class="hover-areas">
+          <div id="area-basay-hover" style="opacity: 0">
+            <img src="Negros Oriental.png" usemap="#new-image-map" />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Basay</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hover-areas">
+          <div id="area-bayawan-hover" style="opacity: 0">
+            <img src="Negros Oriental.png" usemap="#new-image-map" />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Bayawan</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>

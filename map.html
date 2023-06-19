@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Mapping</title>
+    <style type="text/css">
+      div#new-map-main-container-areas {
+        position: relative;
+      }
+      .newer-states-map-hover-areas {
+        position: absolute;
+        top: 0px;
+      }
+      .new-info-title {
+        color: black !important;
+      }
+      .new-states-map {
+        display: flex;
+        justify-content: center;
+      }
+      h1.new-info-title {
+        text-align: center !important;
+        font-size: 46px !important;
+        margin: 0 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="new-map-main-container-areas" class="new-map-main-container-areas">
+      <div id="new-states-map" class="new-states-map">
+        <!-- BASE MAP IMAGE -->
+        <!-- <img id="new-truemap-areas" src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/MAIN_MAP-640w.png" usemap="#image-map"> -->
+        <img
+          id="new-truemap-areas"
+          src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/BASE-640w.png"
+          usemap="#image-map"
+        />
+        <!-- BASE MAP IMAGE -->
+        <!-- TEAM HOVER MAP -->
+        <map name="new-image-map">
+          <area
+            class="new-hover-state-marinadelrey"
+            target=""
+            alt="Marina Del Rey"
+            title="Marina Del Rey"
+            href="/homes-for-sale-in-marina-del-rey"
+            coords="350,551,315,585,281,555,302,538,335,544,327,536,339,539"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-venice"
+            target=""
+            alt="Venice"
+            title="Venice"
+            href="/homes-for-sale-in-venice"
+            coords="289,481,242,517,279,554,302,536,330,542,311,521,325,508,319,503,313,508"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-santamonica"
+            target=""
+            alt="Santa Monica"
+            title="Santa Monica"
+            href="/homes-for-sale-in-santa-monica"
+            coords="293,476,240,516,189,460,200,450,199,440,205,439,214,427,227,439,234,432,258,452,262,451"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-pacificpalisades"
+            target=""
+            alt="Pacific Palisades"
+            title="Pacific Palisades"
+            href="/homes-for-sale-in-pacific-palisades"
+            coords="130,308,89,390,124,397,123,435,142,443,153,442,186,459,197,450,197,438,204,437,214,426,213,412,194,424,195,371,186,314,162,308,153,315,143,315"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-brentwood"
+            target=""
+            alt="Brentwood"
+            title="Brentwood"
+            href="/homes-for-sale-in-brentwood"
+            coords="262,411,256,426,244,436,235,429,226,437,214,425,213,411,195,421,196,371,188,314,197,308,202,313,212,308,227,309,233,316,227,332,234,347,238,381"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-encino"
+            target=""
+            alt="Encino"
+            title="Encino"
+            href="/homes-for-sale-in-encino"
+            coords="172,236,159,305,186,312,198,305,203,311,213,305,229,308,238,314,245,276,245,250,245,241,237,227,199,229,193,237"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-marvista"
+            target=""
+            alt="Mar Vista"
+            title="Mar Vista"
+            href="/homes-for-sale-in-mar-vista"
+            coords="285,466,313,439,342,476,339,487,342,489,337,494,341,502,335,504,329,501,325,503,320,500,313,505,291,481,296,474"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-westwood"
+            target=""
+            alt="Westwood"
+            title="Westwood"
+            href="/homes-for-sale-in-westwood"
+            coords="310,406,287,425,273,426,269,422,274,417,264,400,257,402,249,393,256,393,263,388,267,392,274,394,277,388,283,384,286,378,291,382,298,381,303,390,307,397"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-shermanoaks"
+            target=""
+            alt="Sherman Oaks"
+            title="Sherman Oaks"
+            href="/homes-for-sale-in-sherman-oaks"
+            coords="247,266,293,272,299,306,242,309"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-northhollywood"
+            target=""
+            alt="North Hollywood"
+            title="North Hollywood"
+            href="/homes-for-sale-in-north-hollywood"
+            coords="374,215,389,275,332,272,315,263,313,227,304,215,298,205,310,205,314,199,321,202,322,194,330,194,332,203"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-atwatervillage"
+            target=""
+            alt="Atwater Village"
+            title="Atwater Village"
+            href=""
+            coords="472,271,483,277,501,327,490,344,478,313"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-losfeliz"
+            target=""
+            alt="Los Feliz"
+            title="Los Feliz"
+            href="/homes-for-sale-in-los-feliz"
+            coords="470,270,476,312,489,348,481,346,478,353,479,365,475,370,467,367,452,350,451,343,438,343,438,331,442,330,442,316,446,311,446,281,435,282,416,277,427,270,434,274,437,262"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-westhollywood"
+            target=""
+            alt="West Hollywood"
+            title="West Hollywood"
+            href="/homes-for-sale-in-west-hollywood"
+            coords="399,330,399,345,359,346,361,358,353,362,347,357,342,362,335,363,335,358,339,355,340,342,348,334,359,329,363,308,374,313,379,322,390,322"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-beverlyhills"
+            target=""
+            alt="Beverly Hills"
+            title="Beverly Hills"
+            href="/homes-for-sale-in-beverly-hills"
+            coords="382,408,375,398,355,395,354,362,347,360,343,365,333,363,333,355,336,354,339,336,332,336,327,342,327,348,324,364,320,358,316,365,303,362,301,368,297,370,297,376,304,379,302,384,308,394,312,406,332,421,332,415,354,416,355,407,368,407,371,412"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-glendale"
+            target=""
+            alt="Glendale"
+            title="Glendale"
+            href="/homes-for-sale-in-glendale"
+            coords="301,341,310,362,315,362,318,351,325,359,326,337,322,333"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-burbank"
+            target=""
+            alt="Burbank"
+            title="Burbank"
+            href="/homes-for-sale-in-burbank"
+            coords="321,330,300,338,292,330,292,323,278,308,298,307,306,314,314,312,321,321"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-eaglerock"
+            target=""
+            alt="Eagle Rock"
+            title="Eagle Rock"
+            href="/homes-for-sale-in-eagle-rock"
+            coords="540,283,538,311,540,318,553,323,572,326,576,311,591,312,593,318,602,317,603,296,597,283,580,279"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-highlandpark"
+            target=""
+            alt="Highland Park"
+            title="Highland Park"
+            href="/homes-for-sale-in-highland-park"
+            coords="555,325,554,331,570,333,566,343,574,358,572,362,574,366,591,359,589,365,590,368,596,366,600,357,604,359,604,349,618,338,617,328,623,322,615,318,603,322,601,320,592,320,588,313,576,313,573,328"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-glassellpark"
+            target=""
+            alt="Glassell Park"
+            title="Glassell Park"
+            href="/homes-for-sale-in-glassel-park"
+            coords="506,324,492,343,506,352,514,350,520,357,522,371,537,379,544,368,554,364,553,355,548,353,548,348,554,349,568,336,552,331,552,326,544,321,537,316,536,300"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-silverlake"
+            target=""
+            alt="Silver Lake"
+            title="Silver Lake"
+            href="/homes-for-sale-in-silver-lake"
+            coords="484,414,465,403,466,372,475,372,480,366,480,354,484,350,492,353,491,345,505,354,512,352,518,358,520,374,510,385,496,381,496,399,493,398"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-echopark"
+            target=""
+            alt="Echo Park"
+            title="Echo Park"
+            href="/homes-for-sale-in-echo-park"
+            coords="515,425,512,431,486,415,494,401,499,402,498,384,510,389,516,382,520,400,513,417"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-palms"
+            target=""
+            alt="Palms"
+            title="Palms"
+            href="/homes-for-sale-in-palms"
+            coords="370,442,354,460,352,469,343,474,327,453,336,445,340,450,350,447,353,451,357,450,368,440"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-culvercity"
+            target=""
+            alt="Culver City"
+            title="Culver City"
+            href="/homes-for-sale-in-culver-city"
+            coords="319,528,313,521,328,506,330,504,334,508,342,505,340,495,344,490,342,487,344,477,354,470,356,461,379,435,381,440,378,442,376,447,377,452,372,460,377,460,385,455,386,464,380,468,376,468,374,480,382,480,383,487,384,496,388,494,390,488,392,495,391,505,389,518,383,518,375,516,368,520,366,518,370,512,361,512,357,507,357,495,353,500,346,504,335,513,338,519,330,517"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-westadams"
+            target=""
+            alt="West Adams"
+            title="West Adams"
+            href="/homes-for-sale-in-west-adams"
+            coords="429,436,379,443,379,455,385,452,386,454,421,450,423,446,430,448"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-baldwinhills"
+            target=""
+            alt="Baldwin Hills"
+            title="Baldwin Hills"
+            href="/homes-for-sale-in-baldwin-hills"
+            coords="411,480,411,499,403,505,406,512,396,518,390,518,395,494,390,485,385,489,382,478,376,478,377,469,388,465,386,459,392,457,395,468,404,465"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-viewpark"
+            target=""
+            alt="View Park"
+            title="View Park"
+            href="/homes-for-sale-in-view-park"
+            coords="411,473,413,501,424,495,420,488,432,483,435,487,439,484,435,475,440,471,438,464,430,457,427,463,416,467"
+            shape="poly"
+          />
+
+          <area
+            class="new-hover-state-leimertpark"
+            target=""
+            alt="Leimert Park"
+            title="Leimert Park"
+            href="/homes-for-sale-in-leimert-park"
+            coords="460,450,466,457,466,479,442,472,439,461,428,449,449,454"
+            shape="poly"
+          />
+        </map>
+        <!-- TEAM HOVER MAP -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-marinadelrey" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/marina+del+rey-ca9b910c-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Marina Del Rey</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-venice" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/venice-eca1b138-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Venice</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-santamonica" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/santa+monica-a087583b-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Santa Monica</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-pacificpalisades" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/pacific+palisades-49065816-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Pacific Palisades</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-encino" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/encino-d745a95e-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Encino</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-brentwood" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/brentwood-f99e433b-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Brentwood</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-marvista" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/mar+vista-beed89e4-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Mar Vista</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-westwood" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/westwood-33df9bb9-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Westwood</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-shermanoaks" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/sherman+oaks-2f180d87-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Sherman Oaks</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-northhollywood" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/north+hollywood-762255f7-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">North Hollywood</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-atwatervillage" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/atwater+village-ac86b5eb-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Atwater Village</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-losfeliz" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/los+feliz-9394416d-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Los Feliz</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-westhollywood" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/west+hollywood-13c7d929-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">West Hollywood</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-beverlyhills" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/beverly+hills-e6743586-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Beverly Hills</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-glendale" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/glendale-6d2395cb-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Glendale</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-burbank" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/burbank-c9399d48-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Burbank</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-eaglerock" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/eaglel+rock-148cad39-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Eagle Rock</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-highlandpark" style="opacity: 0">
+            <img
+              src="https://irp.cdn-website.com/281ee5c0/dms3rep/multi/mobile/highland+park-6d792049.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Highland Park</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-glassellpark" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/glassell+park-2ac71cf5-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Glassell Park</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-silverlake" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/silver+lake-7ebdf686-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Silver Lake</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-echopark" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/echo+park-77c69ca4-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Echo Park</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-palms" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/palms-8497cd47-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Palms</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-culvercity" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/culver+city-bc02ecae-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Culver City</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-westadams" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/west+adams-5aad773a-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">West Adams</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-baldwinhills" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/baldwin+hills-d6edd340-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Baldwin Hills</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-viewpark" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/view+park-0702b882-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">View Park</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - -->
+        <div class="newer-states-map-hover-areas">
+          <div id="new-states-map-hover-leimertpark" style="opacity: 0">
+            <img
+              src="https://lirp.cdn-website.com/281ee5c0/dms3rep/multi/opt/leimert+park-11f3c407-640w.png"
+              usemap="#new-image-map"
+            />
+            <div class="info-box-container">
+              <div class="info-box">
+                <h1 class="new-info-title">Leimert Park</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- close -->
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="text/javascript" src="scripts2.js"></script>
+  </body>
+</html>

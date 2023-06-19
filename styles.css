@@ -1,0 +1,23 @@
+div#main-container-areas {
+    position: relative;
+}
+
+.hover-areas {
+    position: absolute;
+    top: 0px;
+}
+
+.new-states-map {
+    display: flex;
+    justify-content: center;
+}
+
+.new-info-title {
+    color: black !important;
+}
+
+h1.new-info-title {
+    text-align: center !important;
+    font-size: 46px !important;
+    margin: 0 !important;
+}
